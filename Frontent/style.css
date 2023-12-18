@@ -27,22 +27,18 @@
       font-size: 60%;
     }
   }
-  
-  /* 980px / 16px = 61.25em */
   @media (max-width: 61.25em) {
     html {
       font-size: 58%;
     }
   }
-  
-  /* 460px / 16px = 28.75em */
   @media (max-width: 28.75em) {
     html {
       font-size: 55%;
     }
   }
   
-  /* Base styles */
+ 
   
   body {
     font-family: 'Poppins', sans-serif;
@@ -153,7 +149,6 @@
     }
   }
   
-  /* "Automagic" image grid using no media queries */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -225,9 +220,50 @@
     transform: translateX(0);
     transition: transform 0.3s ease-out;
   }
-  
-  /* Contact section */
-  
+  #reg_id {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.reg-container {
+    max-width: 400px;
+    width: 100%;
+    background: var(--main-gray);
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.reg-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-container input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--main-red);
+    border-radius: 4px;
+}
+
+.reg-container button {
+    padding: 1rem;
+    font-size: 1.8rem;
+    background: var(--main-red);
+    color: var(--main-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
+}
+
+.reg-container button:hover {
+    background: var(--main-blue);
+}
+
   .contact-section {
     display: flex;
     flex-direction: column;
@@ -236,7 +272,7 @@
     text-align: center;
     width: 100%;
     height: 100vh;
-    padding: 0 2rem;
+    padding: 4rem 2rem; /* Увеличен верхний и нижний отступ */
     background: var(--main-gray);
   }
   
@@ -275,7 +311,7 @@
     transform: translateY(8px);
   }
   
-  /* Footer */
+ 
   
   footer {
     font-weight: 300;
